@@ -26,7 +26,9 @@ for (i=0;i<numOfSymbols;i++){
 		h_random = Math.random()*100,
 		x_random = Math.random()*width,
 		y_random = Math.random()*height,
-	    type_random = Math.random();
+	    type_random = Math.random(),
+		scale = [],
+		scale.push(Math.random()*100);
 
 	if (type_random<0.5){type_style = 'rect';}
 	else {type_style= 'circle';}
@@ -68,4 +70,5 @@ newArray.forEach(function(obj){
 	}
 	console.log(obj.x);
 	console.log(obj.y);
+	console.log(obj.size);
 })
